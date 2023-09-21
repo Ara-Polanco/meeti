@@ -17,16 +17,14 @@
         }
 
         @include m.desktop { 
-            @include m.grid(3, 2rem);
-            
-           
+            @include m.grid(3, 2rem);  
         }
     }
     
 }
 
 .evento {
-    border: 5px solid v.$grisClaro;
+    border: 2px solid v.$grisClaro;
 
     &__imagen {
         width: 100%;
