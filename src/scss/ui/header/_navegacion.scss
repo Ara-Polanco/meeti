@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@forward 'header';
+
+.navegacion {
+    @extend .header;
+    padding: 0;
+
+    &__enlace {
+        display: flex;
+        align-items: center;
+
+        &--crear {
+            font-weight: 700;
+            color: v.$primario;
+    
+            @include m.tablet { 
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    height: 4rem;
+                    border-right: 3px solid v.$grisClaro;
+                    padding-right: 1.5rem;
+                }
+            }
+    
+        }
+    }
+}
