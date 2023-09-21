@@ -6,7 +6,7 @@
     padding: v.$separacion 0;
 
     &__heading {
-        color: v.$gris;
+        @include m.heading;
     }
 }
 
